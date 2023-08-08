@@ -1,0 +1,32 @@
+expname = ball_tennis_power_sphere
+basedir = ./logs/exps_eigen_nerf
+datadir = ./data/waypoints_ball_tennis_power_sphere/eigen_nerf
+dataset_type = honda_hand
+
+no_batching = True
+
+use_viewdirs = True
+white_bkgd = False
+lrate_decay = 500
+
+use_links = True
+multires_links = 4
+use_eigengrasp = True
+
+N_samples = 64
+N_importance = 128
+N_rand = 1024
+
+testskip = 1
+
+precrop_iters = 1000
+precrop_frac = 0.5
+
+half_res = True
+
+N_iter = 100000
+i_weight = 20000
+i_testset = 20000
+i_video = 5000
+
+arch = eigen_nerf
